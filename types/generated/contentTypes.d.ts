@@ -793,7 +793,7 @@ export interface ApiContactFormContactForm extends Schema.CollectionType {
   info: {
     singularName: 'contact-form';
     pluralName: 'contact-forms';
-    displayName: 'contactForm';
+    displayName: 'ContactForm';
     description: '';
   };
   options: {
@@ -804,7 +804,6 @@ export interface ApiContactFormContactForm extends Schema.CollectionType {
     email: Attribute.Email & Attribute.Required;
     websiteUrl: Attribute.String;
     message: Attribute.Text & Attribute.Required;
-    createAt: Attribute.DateTime & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -829,6 +828,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     singularName: 'experience';
     pluralName: 'experiences';
     displayName: 'Experience';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -839,6 +839,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     logo: Attribute.Media<'images'> & Attribute.Required;
     startdate: Attribute.Date & Attribute.Required;
     enddate: Attribute.Date & Attribute.Required;
+    orderId: Attribute.Integer & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -932,7 +933,8 @@ export interface ApiSocialMediaSocialMedia extends Schema.CollectionType {
   info: {
     singularName: 'social-media';
     pluralName: 'social-medias';
-    displayName: 'socialMedia';
+    displayName: 'SocialMedia';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -965,7 +967,7 @@ export interface ApiTechnologieTechnologie extends Schema.CollectionType {
   info: {
     singularName: 'technologie';
     pluralName: 'technologies';
-    displayName: 'technologies';
+    displayName: 'Technologies';
     description: '';
   };
   options: {

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "contact-form",
     "pluralName": "contact-forms",
-    "displayName": "contactForm",
+    "displayName": "ContactForm",
     "description": ""
   },
   "options": {
@@ -22,15 +22,10 @@
     },
     "websiteUrl": {
       "type": "string",
-      "regex": "/((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\\+\\$,\\w]+@)[A-Za-z0-9.-]+)((?:\\/[\\+~%\\/.\\w-_]*)?\\??(?:[-\\+=&;%@.\\w_]*)#?(?:[\\w]*))?)/",
       "required": false
     },
     "message": {
       "type": "text",
-      "required": true
-    },
-    "createAt": {
-      "type": "datetime",
       "required": true
     }
   }

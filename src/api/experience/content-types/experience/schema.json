@@ -4,7 +4,8 @@
   "info": {
     "singularName": "experience",
     "pluralName": "experiences",
-    "displayName": "Experience"
+    "displayName": "Experience",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,12 +21,12 @@
       "required": true
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "startdate": {
       "type": "date",
@@ -33,6 +34,10 @@
     },
     "enddate": {
       "type": "date",
+      "required": true
+    },
+    "orderId": {
+      "type": "integer",
       "required": true
     }
   }
