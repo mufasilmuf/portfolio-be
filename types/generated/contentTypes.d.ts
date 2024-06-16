@@ -840,6 +840,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     startdate: Attribute.Date & Attribute.Required;
     enddate: Attribute.Date & Attribute.Required;
     orderId: Attribute.Integer & Attribute.Required;
+    desgination: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -864,6 +865,7 @@ export interface ApiHeaderHeader extends Schema.CollectionType {
     singularName: 'header';
     pluralName: 'headers';
     displayName: 'Header';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -871,6 +873,7 @@ export interface ApiHeaderHeader extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     orderId: Attribute.Integer & Attribute.Required;
+    section: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

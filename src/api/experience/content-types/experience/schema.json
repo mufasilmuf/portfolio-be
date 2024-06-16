@@ -39,6 +39,10 @@
     "orderId": {
       "type": "integer",
       "required": true
+    },
+    "desgination": {
+      "type": "string",
+      "required": true
     }
   }
 }
