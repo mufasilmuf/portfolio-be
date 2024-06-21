@@ -838,7 +838,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     responsibilities: Attribute.Text & Attribute.Required;
     logo: Attribute.Media<'images'> & Attribute.Required;
     startdate: Attribute.Date & Attribute.Required;
-    enddate: Attribute.Date & Attribute.Required;
+    enddate: Attribute.Date;
     orderId: Attribute.Integer & Attribute.Required;
     desgination: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;

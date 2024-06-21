@@ -34,7 +34,7 @@
     },
     "enddate": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "orderId": {
       "type": "integer",
